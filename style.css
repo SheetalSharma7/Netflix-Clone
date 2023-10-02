@@ -31,7 +31,7 @@ body {
     display:flex;
     justify-content:space-around;
     flex-direction: row;
-    position: relative;
+    position:sticky;
      overflow-x: hidden; 
     
     
@@ -45,9 +45,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    color: white;
-    opacity: 1;
+    align-self: center; 
+    color: #fff;
+    margin-right: -15rem;
+  
     
 }
 .buttons{
@@ -62,7 +63,8 @@ body {
     align-self: center;
     color: white;
     text-decoration: double;
-    margin-left: -245px;
+    /* margin-left: -245px; */
+  
 }
 .main {
     width: 100%;
@@ -484,10 +486,6 @@ body {
     .email{
          width: 60%;
     }
-    /* .buttons{
-        position:absolute;
-        margin-left: 20rem;
-    } */
 
  }
  @media(max-width:988px){
@@ -525,20 +523,23 @@ body {
     
   } 
    @media(max-width:617px){
-      .navbar{
-        justify-content: flex-start;
-      }
       #language{
         margin-left: 0;
         visibility: hidden;
       }
-      .buttons{
-        margin-left: -23px;
-        
-      }
    }
 
-
+   @media (min-width: 750px) and (max-width: 1080px){
+      #language{
+         display: none;
+      }
+   }
+   @media(max-width:304px) {
+       .buttons{
+        visibility: hidden;
+       }
+   }
+   
 
 
 
